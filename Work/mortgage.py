@@ -22,7 +22,9 @@ while principal > 0:
     if principal < 0:
         principal -= principal  # Clear overpayment
 
-    print(months, round(total_paid, 2), round(principal, 2))
+    # print(months, round(total_paid, 2), round(principal, 2))
+    print(f'{months} {total_paid:0.2f} {principal:0.2f}')
 
-print('Total paid', round(total_paid, 2))
-print('Months required', months)
+# print('Total paid', round(total_paid, 2))
+# print('Months required', months)
+print(f'Total payment of {total_paid:0.2f} across {months} months')
